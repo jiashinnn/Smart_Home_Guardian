@@ -56,8 +56,8 @@ In many homes today, children, students, and elderly people often stay alone wit
 │ Controls    │                 │ tbl_threshold│                 │ • PIR       │
 │ History     │                 └──────────────┘                 │ • SW-420    │
 └─────────────┘                                                  │ • OLED      │
-                                                                  │ • Relay     │
-                                                                  └─────────────┘
+                                                                 │ • Relay     │
+                                                                 └─────────────┘
 ```
 
 ### Data Flow
