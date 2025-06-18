@@ -1,7 +1,7 @@
 -- Merging decision tree log ---
 application
-INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\main\AndroidManifest.xml:2:5-33:19
-INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\debug\AndroidManifest.xml
+INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\main\AndroidManifest.xml:2:5-33:19
+INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\debug\AndroidManifest.xml
 MERGED from [androidx.window:window:1.2.0] C:\Users\Huawei MateBook D15\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:22:5-29:19
 MERGED from [androidx.window:window:1.2.0] C:\Users\Huawei MateBook D15\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:22:5-29:19
 MERGED from [androidx.core:core:1.13.1] C:\Users\Huawei MateBook D15\.gradle\caches\transforms-3\c666c258fca39b3353b46678a6b928ab\transformed\core-1.13.1\AndroidManifest.xml:28:5-89
@@ -15,20 +15,20 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Huawei MateBook D1
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Huawei MateBook D15\.gradle\caches\transforms-3\ee01e2b20f52029a052c42ac95f9e8b2\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Huawei MateBook D15\.gradle\caches\transforms-3\ee01e2b20f52029a052c42ac95f9e8b2\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 	android:extractNativeLibs
-		INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\debug\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] C:\Users\Huawei MateBook D15\.gradle\caches\transforms-3\c666c258fca39b3353b46678a6b928ab\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 	android:name
-		INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\main\AndroidManifest.xml
 manifest
-ADDED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\main\AndroidManifest.xml:1:1-45:12
-MERGED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\main\AndroidManifest.xml:1:1-45:12
-INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-MERGED from [:fluttertoast] C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:path_provider_android] C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:shared_preferences_android] C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+ADDED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\main\AndroidManifest.xml:1:1-45:12
+MERGED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\main\AndroidManifest.xml:1:1-45:12
+INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+MERGED from [:fluttertoast] C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:path_provider_android] C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:shared_preferences_android] C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.preference:preference:1.2.1] C:\Users\Huawei MateBook D15\.gradle\caches\transforms-3\10d0d8c1f4c5c1b7a3b300d05f7ebb5e\transformed\preference-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Huawei MateBook D15\.gradle\caches\transforms-3\3a04377ab98aaf9189ccddcb951bae89\transformed\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment-ktx:1.7.1] C:\Users\Huawei MateBook D15\.gradle\caches\transforms-3\6bbbed36202d97cc5c56f59110c58ff8\transformed\jetified-fragment-ktx-1.7.1\AndroidManifest.xml:2:1-7:12
@@ -81,39 +81,39 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\Huawei MateBook D15\.gradle\caches\transforms-3\0dc5f52e11e39e47d9a291708a767dcc\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Huawei MateBook D15\.gradle\caches\transforms-3\6707c561045b071954f9f1d8398a2530\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
 	package
-		INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\debug\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\debug\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\main\AndroidManifest.xml:1:11-69
 queries
-ADDED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\main\AndroidManifest.xml:39:5-44:15
+ADDED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\main\AndroidManifest.xml:39:5-44:15
 intent#action:name:android.intent.action.PROCESS_TEXT+data:mimeType:text/plain
-ADDED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\main\AndroidManifest.xml:40:9-43:18
+ADDED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\main\AndroidManifest.xml:40:9-43:18
 action#android.intent.action.PROCESS_TEXT
-ADDED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\main\AndroidManifest.xml:41:13-72
+ADDED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\main\AndroidManifest.xml:41:13-72
 	android:name
-		ADDED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\main\AndroidManifest.xml:41:21-70
+		ADDED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\main\AndroidManifest.xml:41:21-70
 data
-ADDED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\main\AndroidManifest.xml:42:13-50
+ADDED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\main\AndroidManifest.xml:42:13-50
 	android:mimeType
-		ADDED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\main\AndroidManifest.xml:42:19-48
+		ADDED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\main\AndroidManifest.xml:42:19-48
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\debug\AndroidManifest.xml:6:5-66
+ADDED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\debug\AndroidManifest.xml:6:5-66
 	android:name
-		ADDED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\debug\AndroidManifest.xml:6:22-64
+		ADDED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\debug\AndroidManifest.xml:6:22-64
 uses-sdk
-INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\debug\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\debug\AndroidManifest.xml
-INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\debug\AndroidManifest.xml
-MERGED from [:fluttertoast] C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:fluttertoast] C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:path_provider_android] C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:path_provider_android] C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:shared_preferences_android] C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:shared_preferences_android] C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\debug\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\debug\AndroidManifest.xml
+INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\debug\AndroidManifest.xml
+MERGED from [:fluttertoast] C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_android] C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_android] C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [androidx.preference:preference:1.2.1] C:\Users\Huawei MateBook D15\.gradle\caches\transforms-3\10d0d8c1f4c5c1b7a3b300d05f7ebb5e\transformed\preference-1.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.preference:preference:1.2.1] C:\Users\Huawei MateBook D15\.gradle\caches\transforms-3\10d0d8c1f4c5c1b7a3b300d05f7ebb5e\transformed\preference-1.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Huawei MateBook D15\.gradle\caches\transforms-3\3a04377ab98aaf9189ccddcb951bae89\transformed\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -217,9 +217,9 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\Huawei MateBook D15\.gradle\ca
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Huawei MateBook D15\.gradle\caches\transforms-3\6707c561045b071954f9f1d8398a2530\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Huawei MateBook D15\.gradle\caches\transforms-3\6707c561045b071954f9f1d8398a2530\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
 	android:targetSdkVersion
-		INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\debug\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\Smart_Home_Guardian\frontend\android\app\src\debug\AndroidManifest.xml
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.2.0] C:\Users\Huawei MateBook D15\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
 	android:required

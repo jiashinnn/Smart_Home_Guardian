@@ -284,6 +284,12 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "sleek_circular_slider",
+      "rootUri": "file:///C:/Users/Huawei%20MateBook%20D15/AppData/Local/Pub/Cache/hosted/pub.dev/sleek_circular_slider-2.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "source_span",
       "rootUri": "file:///C:/Users/Huawei%20MateBook%20D15/AppData/Local/Pub/Cache/hosted/pub.dev/source_span-1.10.0",
       "packageUri": "lib/",
@@ -356,7 +362,7 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2025-06-17T14:41:52.415605Z",
+  "generated": "2025-06-18T08:53:02.883929Z",
   "generator": "pub",
   "generatorVersion": "3.5.4",
   "flutterRoot": "file:///C:/flutter",

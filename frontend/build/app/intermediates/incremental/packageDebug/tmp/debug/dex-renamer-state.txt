@@ -1,14 +1,14 @@
-#Wed Jun 18 11:47:55 SGT 2025
-base.0=C\:\\Users\\Huawei MateBook D15\\OneDrive - UNIVERSITY UTARA MALAYSIA\\Documents\\uni\\a Sem 6 Sensor-based Systems\\final_interface\\frontend\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\Huawei MateBook D15\\OneDrive - UNIVERSITY UTARA MALAYSIA\\Documents\\uni\\a Sem 6 Sensor-based Systems\\final_interface\\frontend\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\Huawei MateBook D15\\OneDrive - UNIVERSITY UTARA MALAYSIA\\Documents\\uni\\a Sem 6 Sensor-based Systems\\final_interface\\frontend\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
-base.3=C\:\\Users\\Huawei MateBook D15\\OneDrive - UNIVERSITY UTARA MALAYSIA\\Documents\\uni\\a Sem 6 Sensor-based Systems\\final_interface\\frontend\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
-base.4=C\:\\Users\\Huawei MateBook D15\\OneDrive - UNIVERSITY UTARA MALAYSIA\\Documents\\uni\\a Sem 6 Sensor-based Systems\\final_interface\\frontend\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
+#Wed Jun 18 18:48:25 SGT 2025
+base.0=C\:\\Users\\Huawei MateBook D15\\OneDrive - UNIVERSITY UTARA MALAYSIA\\Documents\\uni\\a Sem 6 Sensor-based Systems\\Smart_Home_Guardian\\frontend\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\Huawei MateBook D15\\OneDrive - UNIVERSITY UTARA MALAYSIA\\Documents\\uni\\a Sem 6 Sensor-based Systems\\Smart_Home_Guardian\\frontend\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\Huawei MateBook D15\\OneDrive - UNIVERSITY UTARA MALAYSIA\\Documents\\uni\\a Sem 6 Sensor-based Systems\\Smart_Home_Guardian\\frontend\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.3=C\:\\Users\\Huawei MateBook D15\\OneDrive - UNIVERSITY UTARA MALAYSIA\\Documents\\uni\\a Sem 6 Sensor-based Systems\\Smart_Home_Guardian\\frontend\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+base.4=C\:\\Users\\Huawei MateBook D15\\OneDrive - UNIVERSITY UTARA MALAYSIA\\Documents\\uni\\a Sem 6 Sensor-based Systems\\Smart_Home_Guardian\\frontend\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
-path.2=1/classes.dex
-path.3=2/classes.dex
-path.4=0/classes.dex
+path.2=0/classes.dex
+path.3=1/classes.dex
+path.4=2/classes.dex
 renamed.0=classes.dex
 renamed.1=classes2.dex
 renamed.2=classes3.dex

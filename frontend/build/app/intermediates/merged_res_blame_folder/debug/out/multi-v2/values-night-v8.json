@@ -4,7 +4,7 @@
             "outputFile": "com.example.frontend.app-mergeDebugResources-39:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Huawei MateBook D15\\OneDrive - UNIVERSITY UTARA MALAYSIA\\Documents\\uni\\a Sem 6 Sensor-based Systems\\final_interface\\frontend\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\Users\\Huawei MateBook D15\\OneDrive - UNIVERSITY UTARA MALAYSIA\\Documents\\uni\\a Sem 6 Sensor-based Systems\\Smart_Home_Guardian\\frontend\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

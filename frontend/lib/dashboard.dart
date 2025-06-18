@@ -3,11 +3,12 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:sleek_circular_slider/sleek_circular_slider.dart';
 import 'myconfig.dart';
 
 class Dashboard extends StatefulWidget {
   final VoidCallback? onNavigateToHistory;
-  
+
   const Dashboard({super.key, this.onNavigateToHistory});
 
   @override
@@ -525,8 +526,10 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
                             colors: [
-                              primaryColor.withOpacity(0.1), // Very light at top
-                              primaryColor.withOpacity(0.25), // Slightly darker at bottom for text readability
+                              primaryColor
+                                  .withOpacity(0.1), // Very light at top
+                              primaryColor.withOpacity(
+                                  0.25), // Slightly darker at bottom for text readability
                             ],
                           ),
                           borderRadius: const BorderRadius.only(
@@ -628,9 +631,13 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                       if (!_isLoading) _buildEnvironmentalStatusCard(),
                       const SizedBox(height: 16),
 
-                      // Sensor Grid - PIR and Vibration first
-                      if (!_isLoading) _buildSensorGrid(),
+                      // Circular Sliders for Temperature and Humidity
+                      if (!_isLoading) _buildCircularSliders(),
                       const SizedBox(height: 16),
+
+                      // Sensor Grid - PIR and Vibration first
+                      // if (!_isLoading) _buildSensorGrid(),
+                      // const SizedBox(height: 16),
 
                       // Quick Actions
                       if (!_isLoading) _buildQuickActions(),
@@ -675,8 +682,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
           borderRadius: BorderRadius.circular(16),
           boxShadow: [
             BoxShadow(
-              color: (relayState ? dangerColor : successColor)
-                  .withOpacity(0.2),
+              color: (relayState ? dangerColor : successColor).withOpacity(0.2),
               blurRadius: 12,
               offset: const Offset(0, 6),
             ),
@@ -844,6 +850,223 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
         );
       },
     );
+  }
+
+  Widget _buildCircularSliders() {
+    return Container(
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(20),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.08),
+            blurRadius: 15,
+            offset: const Offset(0, 8),
+          ),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Environmental Monitoring',
+            style: TextStyle(
+              color: const Color(0xFF5d4e75),
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(height: 20),
+          Row(
+            children: [
+              // Temperature Circular Slider
+              Expanded(
+                child: Column(
+                  children: [
+                    IgnorePointer(
+                      child: SleekCircularSlider(
+                        appearance: CircularSliderAppearance(
+                          customWidths: CustomSliderWidths(
+                            trackWidth: 10,
+                            progressBarWidth: 12,
+                            shadowWidth: 14,
+                            handlerSize: 6,
+                          ),
+                          customColors: CustomSliderColors(
+                            trackColor: Colors.grey.withOpacity(0.3),
+                            progressBarColors: [
+                              _getTemperatureColor(),
+                              _getTemperatureColor().withOpacity(0.8),
+                            ],
+                            shadowColor:
+                                _getTemperatureColor().withOpacity(0.4),
+                            shadowMaxOpacity: 0.6,
+                            dotColor: _getTemperatureColor(),
+                            hideShadow: false,
+                          ),
+                          infoProperties: InfoProperties(
+                            topLabelStyle: const TextStyle(
+                              color: Color(0xFF5d4e75),
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600,
+                            ),
+                            topLabelText: 'Temperature',
+                            mainLabelStyle: TextStyle(
+                              color: _getTemperatureColor(),
+                              fontSize: 28,
+                              fontWeight: FontWeight.bold,
+                            ),
+                            modifier: (double value) {
+                              return '${temperature.toStringAsFixed(1)}°C';
+                            },
+                            bottomLabelStyle: TextStyle(
+                              color: const Color(0xFF5d4e75).withOpacity(0.7),
+                              fontSize: 10,
+                              fontWeight: FontWeight.w500,
+                            ),
+                            bottomLabelText:
+                                '${tempLowThreshold.toInt()}° - ${tempHighThreshold.toInt()}°',
+                          ),
+                          startAngle: 180,
+                          angleRange: 180,
+                          size: 160,
+                          animationEnabled: true,
+                        ),
+                        min: 0,
+                        max: 50,
+                        initialValue: temperature.clamp(0.0, 50.0),
+                        onChangeEnd: null, // Make it completely read-only
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 12, vertical: 4),
+                      decoration: BoxDecoration(
+                        color: _getTemperatureColor().withOpacity(0.1),
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(
+                          color: _getTemperatureColor().withOpacity(0.3),
+                          width: 1,
+                        ),
+                      ),
+                      child: Text(
+                        _getTemperatureStatus(),
+                        style: TextStyle(
+                          color: _getTemperatureColor(),
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(width: 20),
+              // Humidity Circular Slider
+              Expanded(
+                child: Column(
+                  children: [
+                    IgnorePointer(
+                      child: SleekCircularSlider(
+                        appearance: CircularSliderAppearance(
+                          customWidths: CustomSliderWidths(
+                            trackWidth: 10,
+                            progressBarWidth: 12,
+                            shadowWidth: 14,
+                            handlerSize: 6,
+                          ),
+                          customColors: CustomSliderColors(
+                            trackColor: Colors.grey.withOpacity(0.3),
+                            progressBarColors: [
+                              _getHumidityColor(),
+                              _getHumidityColor().withOpacity(0.8),
+                            ],
+                            shadowColor: _getHumidityColor().withOpacity(0.4),
+                            shadowMaxOpacity: 0.6,
+                            dotColor: _getHumidityColor(),
+                            hideShadow: false,
+                          ),
+                          infoProperties: InfoProperties(
+                            topLabelStyle: const TextStyle(
+                              color: Color(0xFF5d4e75),
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600,
+                            ),
+                            topLabelText: 'Humidity',
+                            mainLabelStyle: TextStyle(
+                              color: _getHumidityColor(),
+                              fontSize: 28,
+                              fontWeight: FontWeight.bold,
+                            ),
+                            modifier: (double value) {
+                              return '${humidity.toStringAsFixed(1)}%';
+                            },
+                            bottomLabelStyle: TextStyle(
+                              color: const Color(0xFF5d4e75).withOpacity(0.7),
+                              fontSize: 10,
+                              fontWeight: FontWeight.w500,
+                            ),
+                            bottomLabelText:
+                                'Max: ${humidityThreshold.toInt()}%',
+                          ),
+                          startAngle: 180,
+                          angleRange: 180,
+                          size: 160,
+                          animationEnabled: true,
+                        ),
+                        min: 0,
+                        max: 100,
+                        initialValue: humidity.clamp(0.0, 100.0),
+                        onChangeEnd: null, // Make it completely read-only
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 12, vertical: 4),
+                      decoration: BoxDecoration(
+                        color: _getHumidityColor().withOpacity(0.1),
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(
+                          color: _getHumidityColor().withOpacity(0.3),
+                          width: 1,
+                        ),
+                      ),
+                      child: Text(
+                        _getHumidityStatus(),
+                        style: TextStyle(
+                          color: _getHumidityColor(),
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  String _getTemperatureStatus() {
+    if (temperature > tempHighThreshold) {
+      return 'Too Hot';
+    } else if (temperature < tempLowThreshold) {
+      return 'Too Cold';
+    } else {
+      return 'Optimal';
+    }
+  }
+
+  String _getHumidityStatus() {
+    if (humidity > humidityThreshold) {
+      return 'Too High';
+    } else {
+      return 'Normal';
+    }
   }
 
   Widget _buildSensorGrid() {
@@ -1236,7 +1459,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
     int motionCount = motionDetected ? 1 : 0;
     int vibrationCount = vibrationDetected ? 1 : 0;
     int totalAlerts = motionCount + vibrationCount;
-    
+
     String safetyStatus = "ALL SAFE";
     String statusMessage = "Your home is secure and protected";
     Color statusColor = successColor;
@@ -1245,7 +1468,8 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
     // Determine status based on PIR and Vibration only
     if (motionDetected && vibrationDetected) {
       safetyStatus = "HIGH ALERT";
-      statusMessage = "Motion and vibration detected - Check your home immediately";
+      statusMessage =
+          "Motion and vibration detected - Check your home immediately";
       statusColor = dangerColor;
       safetyIcon = Icons.warning_rounded;
     } else if (motionDetected) {
@@ -1275,7 +1499,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
             spreadRadius: 2,
           ),
           BoxShadow(
-            color: Colors.black.withOpacity(0.2), 
+            color: Colors.black.withOpacity(0.2),
             blurRadius: 30,
             offset: const Offset(0, 15),
             spreadRadius: -5,
@@ -1291,13 +1515,13 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(24),
         child: Container(
-            decoration: BoxDecoration(
+          decoration: BoxDecoration(
             image: const DecorationImage(
               image: AssetImage('assets/images/backgroundcard.png'),
               fit: BoxFit.cover,
             ),
             borderRadius: BorderRadius.circular(24),
-            ),
+          ),
           child: Container(
             // Light overlay for text readability while preserving background colors
             decoration: BoxDecoration(
@@ -1350,9 +1574,9 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                       );
                     },
                   ),
-                  
+
                   const SizedBox(height: 20),
-                  
+
                   // Title
                   Text(
                     'Current Safety In Home',
@@ -1371,12 +1595,13 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                     ),
                     textAlign: TextAlign.center,
                   ),
-                  
+
                   const SizedBox(height: 16),
-                  
+
                   // Status with Frame - PROMINENT DISPLAY
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 24, vertical: 20),
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                         begin: Alignment.topLeft,
@@ -1408,10 +1633,10 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                     child: AnimatedBuilder(
                       animation: _pulseAnimation,
                       builder: (context, child) {
-                        Color statusColor = motionDetected || vibrationDetected 
-                            ? const Color(0xFFD32F2F) 
+                        Color statusColor = motionDetected || vibrationDetected
+                            ? const Color(0xFFD32F2F)
                             : const Color.fromARGB(255, 62, 167, 67);
-                        
+
                         return Transform.scale(
                           scale: 1.0 + (_pulseAnimation.value * 0.05),
                           child: Text(
@@ -1446,14 +1671,16 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                       },
                     ),
                   ),
-                  
+
                   const SizedBox(height: 16),
-                  
+
                   // Status Message with Frame
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 14),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 8, vertical: 14),
                     decoration: BoxDecoration(
-                      color: Colors.grey.withOpacity(0.25), // Gray transparent background
+                      color: Colors.grey
+                          .withOpacity(0.25), // Gray transparent background
                       borderRadius: BorderRadius.circular(16),
                       border: Border.all(
                         color: Colors.grey.withOpacity(0.4),
@@ -1485,7 +1712,8 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                           child: Text(
                             statusMessage,
                             style: const TextStyle(
-                              color: Color(0xFF64748B), // Dark gray instead of black
+                              color: Color(
+                                  0xFF64748B), // Dark gray instead of black
                               fontSize: 15,
                               fontWeight: FontWeight.w500, // Less bold
                               height: 1.5,
@@ -1497,9 +1725,9 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                       ],
                     ),
                   ),
-                  
+
                   const SizedBox(height: 20),
-                  
+
                   // Alert Counts Row
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -1508,11 +1736,14 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                       _buildAlertCounter(
                         icon: Icons.directions_walk_rounded,
                         count: motionCount,
-                        label: motionCount == 1 ? "1 motion detected" : "No motion",
-                        color: motionDetected ? dangerColor : Colors.white.withOpacity(0.6),
+                        label:
+                            motionCount == 1 ? "Motion detected" : "No motion",
+                        color: motionDetected
+                            ? dangerColor
+                            : const Color.fromARGB(255, 44, 43, 43),
                         isActive: motionDetected,
                       ),
-                      
+
                       // Divider
                       Container(
                         width: 2,
@@ -1529,13 +1760,17 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                           ),
                         ),
                       ),
-                      
+
                       // Vibration Count
                       _buildAlertCounter(
                         icon: Icons.vibration_rounded,
                         count: vibrationCount,
-                        label: vibrationCount == 1 ? "1 vibration detected" : "No vibration",
-                        color: vibrationDetected ? warningColor : Colors.white.withOpacity(0.6),
+                        label: vibrationCount == 1
+                            ? "vibration detected"
+                            : "No vibration",
+                        color: vibrationDetected
+                            ? warningColor
+                            : const Color.fromARGB(255, 44, 43, 43),
                         isActive: vibrationDetected,
                       ),
                     ],
@@ -1574,13 +1809,15 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                     color: color,
                     width: isActive ? 2 : 1,
                   ),
-                  boxShadow: isActive ? [
-                    BoxShadow(
-                      color: color.withOpacity(0.3),
-                      blurRadius: 10,
-                      offset: const Offset(0, 4),
-                    ),
-                  ] : null,
+                  boxShadow: isActive
+                      ? [
+                          BoxShadow(
+                            color: color.withOpacity(0.3),
+                            blurRadius: 10,
+                            offset: const Offset(0, 4),
+                          ),
+                        ]
+                      : null,
                 ),
                 child: Icon(
                   icon,
