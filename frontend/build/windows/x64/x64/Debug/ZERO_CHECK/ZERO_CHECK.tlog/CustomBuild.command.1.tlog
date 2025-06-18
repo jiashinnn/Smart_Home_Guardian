@@ -1,0 +1,10 @@
+^C:\USERS\HUAWEI MATEBOOK D15\ONEDRIVE - UNIVERSITY UTARA MALAYSIA\DOCUMENTS\UNI\A SEM 6 SENSOR-BASED SYSTEMS\FINAL_INTERFACE\FRONTEND\BUILD\WINDOWS\X64\CMAKEFILES\C5FDF47FCB39A118C55E2F017AECFD6E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/Huawei MateBook D15/OneDrive - UNIVERSITY UTARA MALAYSIA/Documents/uni/a Sem 6 Sensor-based Systems/final_interface/frontend/windows" "-BC:/Users/Huawei MateBook D15/OneDrive - UNIVERSITY UTARA MALAYSIA/Documents/uni/a Sem 6 Sensor-based Systems/final_interface/frontend/build/windows/x64" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Huawei MateBook D15/OneDrive - UNIVERSITY UTARA MALAYSIA/Documents/uni/a Sem 6 Sensor-based Systems/final_interface/frontend/build/windows/x64/frontend.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

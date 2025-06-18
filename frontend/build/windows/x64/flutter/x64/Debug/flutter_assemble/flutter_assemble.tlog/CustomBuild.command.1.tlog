@@ -1,0 +1,28 @@
+^C:\USERS\HUAWEI MATEBOOK D15\ONEDRIVE - UNIVERSITY UTARA MALAYSIA\DOCUMENTS\UNI\A SEM 6 SENSOR-BASED SYSTEMS\FINAL_INTERFACE\FRONTEND\BUILD\WINDOWS\X64\CMAKEFILES\EF5658B94D71EA23629894D0FC83C33F\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\flutter "PROJECT_DIR=C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend" FLUTTER_ROOT=C:\flutter "FLUTTER_EPHEMERAL_DIR=C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\windows\flutter\ephemeral" "PROJECT_DIR=C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend" "FLUTTER_TARGET=C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\lib\main.dart" DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false "PACKAGE_CONFIG=C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\.dart_tool\package_config.json" C:/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\HUAWEI MATEBOOK D15\ONEDRIVE - UNIVERSITY UTARA MALAYSIA\DOCUMENTS\UNI\A SEM 6 SENSOR-BASED SYSTEMS\FINAL_INTERFACE\FRONTEND\BUILD\WINDOWS\X64\CMAKEFILES\DACEEE1A4DA3F89392BDA81B801D7B81\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\HUAWEI MATEBOOK D15\ONEDRIVE - UNIVERSITY UTARA MALAYSIA\DOCUMENTS\UNI\A SEM 6 SENSOR-BASED SYSTEMS\FINAL_INTERFACE\FRONTEND\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/Huawei MateBook D15/OneDrive - UNIVERSITY UTARA MALAYSIA/Documents/uni/a Sem 6 Sensor-based Systems/final_interface/frontend/windows" "-BC:/Users/Huawei MateBook D15/OneDrive - UNIVERSITY UTARA MALAYSIA/Documents/uni/a Sem 6 Sensor-based Systems/final_interface/frontend/build/windows/x64" --check-stamp-file "C:/Users/Huawei MateBook D15/OneDrive - UNIVERSITY UTARA MALAYSIA/Documents/uni/a Sem 6 Sensor-based Systems/final_interface/frontend/build/windows/x64/flutter/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

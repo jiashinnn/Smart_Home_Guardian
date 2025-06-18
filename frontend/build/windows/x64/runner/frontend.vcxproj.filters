@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\windows\runner\flutter_window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\windows\runner\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\windows\runner\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\windows\runner\win32_window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\windows\flutter\generated_plugin_registrant.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\windows\runner\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\Huawei MateBook D15\OneDrive - UNIVERSITY UTARA MALAYSIA\Documents\uni\a Sem 6 Sensor-based Systems\final_interface\frontend\windows\runner\Runner.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{094B91B4-5F06-323B-BDFB-29B8A145178B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
